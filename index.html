@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Veneers Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-11301974072"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-11301974072");
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Üst Veneer Seçim Bölümü -->
+      <div class="section-group">
+        <div class="selector-row" id="top-count-row">
+          <button class="selector-btn" data-count="0" data-pos="top">0</button>
+          <button class="selector-btn active" data-count="2" data-pos="top">
+            2
+          </button>
+          <button class="selector-btn" data-count="4" data-pos="top">4</button>
+          <button class="selector-btn" data-count="6" data-pos="top">6</button>
+          <button class="selector-btn" data-count="8" data-pos="top">8</button>
+          <button class="selector-btn" data-count="10" data-pos="top">
+            10+
+          </button>
+        </div>
+        <div class="veneers-label"></div>
+        <div class="veneers-imgs">
+          <img id="top-img" src="pics/natural/upper2.png" alt="Üst Veneer" />
+        </div>
+      </div>
+      <!-- Alt Veneer Seçim Bölümü -->
+      <div class="veneers-label"></div>
+      <div class="veneers-imgs">
+        <img id="bottom-img" src="pics/natural/lower2.png" alt="Alt Veneer" />
+      </div>
+      <div class="section-group">
+        <div class="selector-row" id="bottom-count-row">
+          <button class="selector-btn" data-count="0" data-pos="bottom">
+            0
+          </button>
+          <button class="selector-btn active" data-count="2" data-pos="bottom">
+            2
+          </button>
+          <button class="selector-btn" data-count="4" data-pos="bottom">
+            4
+          </button>
+          <button class="selector-btn" data-count="6" data-pos="bottom">
+            6
+          </button>
+          <button class="selector-btn" data-count="8" data-pos="bottom">
+            8
+          </button>
+          <button class="selector-btn" data-count="10" data-pos="bottom">
+            10+
+          </button>
+        </div>
+      </div>
+      <!-- Veneer Renk Seçim Bölümü -->
+      <div class="selector-row" id="type-row">
+        <button class="selector-btn active" data-type="natural">
+          Natural Veneers
+        </button>
+        <button class="selector-btn" data-type="zirconium">
+          Zirconium Veneers
+        </button>
+      </div>
+      <!-- Fiyat ve Teklif Bölümü -->
+      <div class="price-card">
+        <h2 id="veneers-label">4 Veneers</h2>
+        <div class="price" id="veneers-price">£ 780</div>
+        <button
+          class="get-quote-btn"
+          onclick="window.open('https://wa.me/905449137827')"
+        >
+          Get Special Offers
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
